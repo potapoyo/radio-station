@@ -5,8 +5,8 @@ variable "service" {
 
 variable "bucket_name" {
   type        = string
-  default     = "radio-station-shoppingjaws"
-  description = "s3 bucket name. replace it."
+  default     = "radio-station-potapoyo"
+  description = "radio-station-potapoyo"
 }
 
 variable "channels" {
@@ -132,8 +132,8 @@ variable "channels" {
       rec_dayweek    = "SAT"
       rec_time_min   = 0
       rec_time_hour  = 3
-      },
-      {
+    },
+    {
       title          = "ランジャタイによりますと"
       id             = "ranjatai"
       area           = "JP16"
@@ -145,5 +145,18 @@ variable "channels" {
       rec_dayweek    = "SAT"
       rec_time_min   = 0
       rec_time_hour  = 22
-      }]
+  },
+      {
+      title          = "伊集院光 深夜の馬鹿力"
+      id             = "ijuin"
+      area           = "JP13"
+      station        = "TBS"
+      exec_dayweek   = "TUE"
+      exec_time_min  = 3
+      exec_time_hour = 3
+      image          = "https://www.tbs.co.jp/radio/ijuin/free/images/mailform/mainimg_ijuin.jpg"
+      rec_dayweek    = "TUE"
+      rec_time_min   = 0
+      rec_time_hour  = 1
+  }]
 }

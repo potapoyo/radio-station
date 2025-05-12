@@ -21,7 +21,7 @@ const genItem =(filename,filelength,date)=>{
   const ext = filename.split(".").pop()
   return `<item>
   <title>${filename}</title>
-  <itunes:author>ShoppingJaws</itunes:author>
+  <itunes:author>potapoyo</itunes:author>
   <itunes:image href="${image}"/>
   <pubDate>${new Date(date).toUTCString()}</pubDate>
   <enclosure url="${rssEndpoint}/${id}/${filename}" length="${filelength}" type="audio/${ext}" charset="binary"/>
@@ -33,7 +33,7 @@ reader.on("close",()=>{
   <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
   <title>${title}</title>
-  <itunes:author>ShoppingJaws</itunes:author>
+  <itunes:author>potapoyo</itunes:author>
   <itunes:summary></itunes:summary>
   <itunes:image href="${image}"/>`
   const after = `</channel>

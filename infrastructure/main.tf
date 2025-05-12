@@ -10,7 +10,7 @@ terraform {
     }
   }
   cloud {
-    organization = "ShoppingJaws"
+    organization = "potapoyo"
 
     workspaces {
       name = "radio-station"
@@ -30,9 +30,9 @@ provider "aws" {
 
 module "basic_auth_s3" {
   source             = "./module/basic_auth_s3"
-  bucket_name        = "radio-station-shoppingjaws"
+  bucket_name        = "radio-station-potapoyo"
   name               = "radio-station"
-  basicauth_username = "ShoppingJaws"
+  basicauth_username = "potapoyo"
 }
 
 module "radio_uploader" {
