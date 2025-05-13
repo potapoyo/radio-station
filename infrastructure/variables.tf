@@ -205,6 +205,19 @@ variable "channels"{
     rec_dayweek    = "WED"
     rec_time_min   = 0
     rec_time_hour  = 23
+    },
+    {
+    title          = "佐倉綾音 論理×ロンリー"
+    id             = "sakuraron"
+    area           = "JP13"
+    station        = "TBS"
+    exec_dayweek   = "WED"
+    exec_time_min  = 3
+    exec_time_hour = 23
+    image          = "https://tbsradio.g.kuroco-img.app/v=1743041687/files/topics/94284_ext_18_0.jpg?width=1920"
+    rec_dayweek    = "WED"
+    rec_time_min   = 0
+    rec_time_hour  = 22
     }
   ]
 }
