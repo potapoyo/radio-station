@@ -192,6 +192,19 @@ variable "channels"{
     rec_dayweek    = "SUN"
     rec_time_min   = 0
     rec_time_hour  = 1
+    },
+    {
+    title          = "リンダカラー∞Denのサクラバシ919"
+    id             = "sakurabashiwed"
+    area           = "JP27"
+    station        = "OBC"
+    exec_dayweek   = "THU"
+    exec_time_min  = 3
+    exec_time_hour = 1
+    image          = "https://program-static.cf.radiko.jp/4d90895f-5bcc-44c8-b763-cd45831262e9.jpeg"
+    rec_dayweek    = "WED"
+    rec_time_min   = 0
+    rec_time_hour  = 23
     }
   ]
 }
