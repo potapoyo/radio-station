@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "lambda" {
   function_name = "${var.service}_${var.module}"
   package_type  = "Image"
-  architectures = ["arm64"]
+  architectures = ["x86_64"]
   memory_size   = 1024
   role          = aws_iam_role.execution.arn
   image_uri     = "${aws_ecr_repository.ecr.repository_url}:latest"
